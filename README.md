@@ -16,11 +16,12 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
+* [X] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] The reverse button reverses the order of the list.
+* [X] The shuffle button shuffles the order of the list.
 
 ## Video Walkthrough
 
@@ -32,7 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Challenges I encountered were mostly due to my inexperience with Android Studio. For example, I wasn't sure where certian buttons were at times, but it was an easy fix thorugh google and my instructors.
 
 ## License
 
