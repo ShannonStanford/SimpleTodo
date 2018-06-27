@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".EditIteActivity">
 
+    <EditText
+        android:id="@+id/itItemText"
+        android:layout_width="383dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="Enter item description"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="413dp"
+        android:layout_marginEnd="296dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onSaveItem"
+        app:layout_constraintTop_toBottomOf="@+id/itItemText" />
 </android.support.constraint.ConstraintLayout>
