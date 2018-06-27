@@ -18,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,11 +42,6 @@ public class MainActivity extends AppCompatActivity {
         itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         lvItems = (ListView) findViewById(R.id.lvitems);
         lvItems.setAdapter(itemsAdapter);
-
-//        items.add("First item");
-//        items.add("Second item");
-
-
         setupListViewListener();
     }
 
@@ -58,6 +54,19 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"Item added to list", Toast.LENGTH_SHORT).show();
 
     }
+
+    public void onShuffle(View v) {
+        Collections.shuffle(items);
+        itemsAdapter.notifyDataSetChanged();
+
+    }
+
+    public void onReverse(View v) {
+        Collections.reverse(items);
+        itemsAdapter.notifyDataSetChanged();
+
+    }
+    
 
     private void setupListViewListener() {
         Log.i("MainActivity", "Setting up listener on list view");
