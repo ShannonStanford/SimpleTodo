@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         itemsAdapter.notifyDataSetChanged();
 
     }
-    
+
 
     private void setupListViewListener() {
         Log.i("MainActivity", "Setting up listener on list view");
